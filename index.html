@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS_Lev1_6&Lev3_1</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Meine dynamische Webseite</h1>
+    <p id="demo">Wähle eine Farbe:</p>
+    <p>
+        <button onclick="changeBackground('pink')">Rosa</button>
+        <button onclick="changeBackground('purple')">Lila</button>
+        <button onclick="changeBackground('orange')">Orange</button>
+    </p>
+    <p>
+        <input type="range" id="rot" value="255" min="0" max="255" onchange="changeHandle()" style="background:red">
+        Rot<br>
+        <input type="range" id="grun" value="255" min="0" max="255" onchange="changeHandle()" style="background:green">
+        Grün<br>
+        <input type="range" id="blau" value="255" min="0" max="255" onchange="changeHandle()" style="background:blue">
+        Blau
+    </p>
+
+    <select id="my-select">
+        <option value="" disabled selected>Select One</option>
+        <option value="select1">Select 1</option>
+        <option value="select2">Select 2</option>
+        <option value="select3">Select 3</option>
+        <option value="select4">Select 4</option>
+        <option value="select5">Select 5</option>
+    </select>
+    <p id="option-selected"></p>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
